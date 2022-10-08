@@ -1,5 +1,8 @@
 body {
+    
     text-align: left;
+    background-image: url(assets/home/background-home-desktop.jpg);
+    color: #ffffff;
 }
 
 h1{
@@ -13,6 +16,7 @@ h1{
     line-height: 172px;
     left: 0;
     right: 1.11%;
+    text-transform: uppercase;
     
 }
 h2{
@@ -21,8 +25,13 @@ h2{
     left: 0.11%;
     right: 15.67%;
     top: calc(50% - 34px/2 - 174px);
-    line-height: 33.6px;
-    
+    line-height: 34px;
+    text-transform: uppercase;
+    font-family: 'Barlow';
+    font-size: 28px;
+    font-size: 28px;
+    font-style: normal;
+    color: #D0D6F9;
 }
 
 p{
@@ -37,24 +46,49 @@ p{
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
-line-height: 32px;
+line-height: 178%;
+ color: #D0D6F9;
     
     
 }
 
 .navbar {
-    padding: 2% 4%;
-    margin: 3% 0;
+   position: absolute;
+width: 830px;
+height: 96px;
+left: 610px;
+top: 40px;
+text-transform: uppercase;
+background color rgba(255,255,255, 0.3)
+backdrop-filter: blur(40.7742px);
 }
 
 .navbar-brand{
     border-radius: 100%;
+    position: absolute;
+width: 48px;
+height: 48px;
+left: 55px;
+top: 64px;
+
 }
 
 .nav-item {
     padding:0 25px;
 }
 
+.navbarLine {
+   position: absolute;
+width: 473px;
+height: 1px;
+left: 167px;
+top: 88px;
+
+background: #FFFFFF;
+mix-blend-mode: normal;
+opacity: 0.25;
+    
+}
 .leftsideCol {
     position: absolute;
     top: 387px;
@@ -69,4 +103,25 @@ line-height: 32px;
     top: 495px;
     border-radius: 100%;
     text-align: center;
+    background-color: #ffffff;
+}
+
+.exportText {
+    
+position: absolute;
+height: 37px;
+left: 22.63%;
+right: 23.36%;
+top: calc(50% - 37px/2 + 0.5px);
+text-transform: uppercase;
+font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 37px;
+/* identical to box height */
+
+letter-spacing: 2px;
+
+color: #0B0D17;
 }
