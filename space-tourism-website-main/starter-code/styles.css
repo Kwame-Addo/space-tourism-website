@@ -1,8 +1,18 @@
+html {
+      width: 100vh;
+    height: 100vh;
+}
+
 body {
-    
+    background-image: url(assets/home/background-home-desktop.jpg); 
+	background-repeat: no-repeat;
     text-align: left;
-    background-image: url(assets/home/background-home-desktop.jpg);
+    background-size: cover;
     color: #ffffff;
+    background-position: center center;
+      background-attachment: fixed;
+    width: 100vh;
+    height: 100vh;
 }
 
 h1{
@@ -56,14 +66,28 @@ line-height: 178%;
 }
 
 .navbar {
+  
    position: absolute;
 width: 830px;
 height: 96px;
 left: 610px;
 top: 40px;
 text-transform: uppercase;
-background color rgba(255,255,255, 0.3)
-backdrop-filter: blur(40.7742px);
+background color rgba(255,255,255, 0.3);
+backdrop-filter: blur(40.7742px);  
+}
+
+
+.nav-link {
+    border-bottom: 3px solid transparent;
+}  
+
+.nav-link:hover {
+    border-bottom: 3px solid #ffffff;
+}
+
+.nav-link.active {
+    border-bottom: 3px solid #ffffff;
 }
 
 .navbar-brand{
@@ -97,6 +121,7 @@ opacity: 0.25;
     top: 387px;
     width: 450px;
     height: 382px;
+    left: 165px;
 }
 .rightsideCol {
    
@@ -154,20 +179,25 @@ left: 832px;
 position: absolute;
 width: 678px;
 height: 678px;
-left: 101px;
+left: 180px;
 top: 203px;
+  width: 445px;
+height: 445px;
+left: 230px;
+top: 343px;
 }
 
 .destinationBody {
     background-image: url(assets/destination/background-destination-desktop.jpg);
 }
 
-.pickDestination {
+ .pickDestination {
 height: 34px;
-left: 14.14%;
+    width: 500px;
+margin-left: 54px;
 right: 1.57%;
-top: calc(50% - 34px/2);
-font-family: 'Barlow';
+margin-top: 200px;
+font-family:'Barlow';
 font-style: normal;
 font-weight: 400;
 font-size: 28px;
@@ -177,20 +207,13 @@ text-transform: uppercase;
 
 }
 
-.destinationImage {
-    position: absolute;
-  width: 445px;
-height: 445px;
-left: 220px;
-top: 319px;
-}
 .destinationHeading {
     position: absolute;
 height: 115px;
-left: 0.11%;
-right: 25.06%;
-top: calc(50% - 115px/2 - 107.5px);
-
+left: 0.5px;
+right: 12.7%;
+top: 71px;
+size: 100px;
 font-family: 'Bellefair';
 font-style: normal;
 font-weight: 400;
@@ -219,7 +242,15 @@ line-height: 32px;
 
 color: #D0D6F9; 
 }
+.destinationLine {
+    position: absolute;
+left: 0.22%;
+right: 0%;
+top: 80.93%;
+bottom: 18.86%;
 
+background: #383B4B;
+}
 .averageDistance{
   position: absolute;
 left: 0.11%;
@@ -331,7 +362,8 @@ background: #383B4B;
 
 /*Crew Custom Styles*/
 .crewBody {
-    background-image: url(assets/crew/background-crew-desktop.jpg);
+    background-image: url(assets/crew/background-crew-desktop.jpg); 
+    
 }
 
 .meetCrewContainer {
@@ -427,21 +459,16 @@ background: url(Image.png);
 /*Technology Custom Styles*/
 .technologyBody {
     background-image: url(assets/technology/background-technology-desktop.jpg);
+    width: 100%;
 }
-.spaceLaunchContainer {
-    position: absolute;
-width: 400px;
-height: 34px;
-left: 166.5px;
-top: 212px;
 
-}
 .spaceLaunch {
     position: absolute;
+    width: 450px;
 height: 34px;
-left: 0;
+left: 166.5px;
 right: 2.3%;
-top: calc(50% - 34px/2);
+top: 212px;
 font-family: 'Barlow Condensed';
 font-style: normal;
 font-weight: 400;
@@ -455,23 +482,27 @@ color: #FFFFFF;
 
 }
 
-.technologyContainer {
-position: absolute;
+.technologyLeft {
+   position: absolute;
 width: 470px;
 height: 303px;
 left: 325px;
 top: 383px;
+    
+}
 
+.techDiv {
+    text-align:left;
 }
 
 .terminology {
    position: absolute;
+    size: 16px;
 height: 19px;
-left: 0%;
+left:  0;
 right: 68.09%;
-top: calc(50% - 19px/2 - 142px);
-width: 350px;
-font-family: 'Barlow Condensed';
+width: 470px;
+font-family: 'Barlow';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -485,8 +516,8 @@ color: #D0D6F9;
 height: 64px;
 left: 0%;
 right: 0%;
-top: calc(50% - 64px/2 - 89.5px);
-
+top: 30px;
+    width: 470px;
 font-family: 'Bellefair';
 font-style: normal;
 font-weight: 400;
@@ -501,8 +532,8 @@ color: #FFFFFF;
 height: 192px;
 left: 0%;
 right: 5.53%;
-top: calc(50% - 192px/2 + 55.5px);
-
+top: 111px;
+size: 18px;
 font-family: 'Barlow';
 font-style: normal;
 font-weight: 400;
@@ -519,4 +550,222 @@ width: 515px;
 height: 527px;
 left: 925px;
 top: 272px;
+}
+
+
+/*tablet size*/
+@media (max-width: 768px) {
+
+    body {
+        position: relative;
+        background-image: url(assets/home/background-home-tablet.jpg);
+        text-align: center;
+        justify-content: fle
+    }  
+    .navbarLine {
+        width: 0;
+        height: 0;
+    }
+    .navbar-brand {
+        position: absolute;
+width: 100px;
+height: 96px;
+        
+    }
+    .navbar {
+      position: absolute;
+width: 450px;
+height: 96px;
+left: 318px;
+top: 0px;
+    
+/*left: 318px;*/
+    }
+    
+    .navbar-brand {
+        position: absolute;
+width: 48px;
+height: 48px;
+left: 39px;
+top: 24px;
+    }
+    .leftsideCol{
+    position: absolute;
+width: 450px;
+height: 334px;
+left: 159px;
+top: 202px; 
+    
+    } 
+    .homeRightsideCol {
+        position: absolute;
+width: 242px;
+height: 242px;
+left: 263px;
+top: 692px;
+       
+    }
+    
+/*    Destination*/
+    .destinationBody {
+        background-image: url(assets/destination/background-destination-tablet.jpg);
+        
+    }
+    
+    .pickDestination {
+        position: absolute;
+width: 372px;
+height: 24px;
+left: 38.5px;
+top: -55px;
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 3.375px;
+text-transform: uppercase;
+
+color: #FFFF
+    }
+    .destinationLeftsideCol {
+        position: absolute;
+width: 300px;
+height: 300px;
+left: 234px;
+top: 220px;
+        background-size: 100% 100%;
+
+    }
+     
+    .destinationRightsideCol {
+        
+position: absolute;
+width: 786px;
+height: 572px;
+left: 0;
+top: 580px;
+    }
+    
+    
+    .destinationHeading {
+        position: absolute;
+width: 310px;
+height: 92px;
+left: 229.5px;
+top:75px;
+size: 80px;
+        
+font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 80px;
+line-height: 92px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+    }
+    
+    .destinationText {
+        text-align: center;
+        width: 590px;
+        margin-left: 98px;
+        margin-right: 98px;
+    } 
+    .destinationLine {
+        left: 100px;
+        top: 320px;
+            width: 573px;
+    }
+    .averageDistance {
+        top: 250px;
+        left: 25%;
+    }
+    
+    .estimatedTime {
+        top: 250px;
+        left: 60%;
+    }
+    
+    
+    
+/*    Crew*/
+    .crewBody {
+        background-image: url(assets/crew/background-crew-tablet.jpg);
+    }
+    
+/*    Technology*/
+    
+    .technologyBody {
+        background-image: url(assets/technology/background-technology-tablet.jpg);
+        width: 768px;
+    }
+    .techDiv {
+        position: relative;
+        text-align: center;
+    }
+    
+    .technologyH1 {
+       position: absolute;
+height: 46px;
+left: 0.11%;
+right: 0.11%;
+top: calc(50% - 46px/2 - 60.5px);
+
+font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 46px;
+/* identical to box height */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+    }
+    
+    .spaceLaunch{
+        position: absolute;
+width: 400px;
+height: 24px;
+left: 38.5px;
+top: 136px;
+        position: absolute;
+right: 1.84%;
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 3.375px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+    }
+    
+    
+    .technologyRight {
+        position: absolute;
+width: 768px;
+height: 310px;
+left: 0px;
+top: 220px;
+        background-image: url(assets/technology/image-launch-vehicle-landscape.jpg)
+            
+    }
+    .technologyLeft {
+        position: absolute;
+width: 458px;
+height: 237px;
+left: 155px;
+top: 690px;
+    }
+    .technologyImage {
+        display: none;
+    }
 }
