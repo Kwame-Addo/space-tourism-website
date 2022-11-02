@@ -207,6 +207,36 @@ text-transform: uppercase;
 
 }
 
+.destinationSelector{
+    position: absolute;
+    top: -60px;
+    left: -30px;
+            height:100px;
+            width: 510px;
+            border: 2px black;
+            margin-top: 30px;
+            text-align:left;
+            
+}
+.destinationBtn {
+                border-radius: 0;
+                height:60px;
+                width: 80px;
+                background-color: inherit;
+                padding-bottom:0;
+                color: #ffffff;
+                border:none;
+                margin:20px;
+}
+.destinationBtn:hover {
+ border-bottom: 3px solid #ffffff;
+    background-color: inherit;
+}
+
+
+
+
+
 .destinationHeading {
     position: absolute;
 height: 115px;
@@ -446,6 +476,32 @@ line-height: 32px;
 color: #D0D6F9; 
 }
 
+.crewSelector{
+    position: absolute;
+    top: 741px;
+    left: 107px;
+            height:40px;
+            width: 300px;
+            border: 2px;
+            margin-top: 30px;
+            text-align:center;
+    border-color: #ffffff;
+            
+}
+.crewBtn {
+                border-radius: 100%;
+                height:20px;
+                width:20px;
+                background-color: inherit;
+                color: #ffffff;
+                /*border:#ffffff;*/
+                margin:5px;
+}
+.crewBtn:hover {
+    background-color:#ffffff;
+    color: black;
+}
+
 .crewMember {
     position: absolute;
 width: 568.07px;
@@ -461,6 +517,37 @@ background: url(Image.png);
     background-image: url(assets/technology/background-technology-desktop.jpg);
     width: 100%;
 }
+
+.technologySelector{
+    position: absolute;
+    left: 165px;
+    top: 383px;
+            height:303px;
+            width: 120px;
+            border: 2px black;
+            margin-top: 30px;
+            
+}
+.technologyBtn {
+                border-radius: 100%;
+                height:60px;
+                width: 60px;
+                background-color: black;
+                color: #ffffff;
+                border-color: #ffffff;
+margin:20px;
+}
+.technologyBtn:hover {
+    background-color:#ffffff;
+    color: black;
+}
+
+.technologyBtn:active {
+      background-color:#ffffff;
+    color: black;
+}
+
+
 
 .spaceLaunch {
     position: absolute;
@@ -574,13 +661,25 @@ height: 96px;
     }
     .navbar {
       position: absolute;
-width: 450px;
+width: 555px;
 height: 96px;
-left: 318px;
-top: 0px;
+left: 185px;
+top: 0;
+        background: rgba(255, 255, 255, 0.04);
     
 /*left: 318px;*/
     }
+    
+    .nav-link {
+       font-size: 14px;
+        width: 95px;
+    
+    }
+    
+    b {
+    display: none;
+}
+    
     
     .navbar-brand {
         position: absolute;
@@ -616,7 +715,7 @@ top: 692px;
         position: absolute;
 width: 372px;
 height: 24px;
-left: 38.5px;
+left: 0;
 top: -55px;
 font-family: 'Barlow';
 font-style: normal;
@@ -646,7 +745,31 @@ height: 572px;
 left: 0;
 top: 580px;
     }
+  
     
+   .destinationSelector{
+    position: absolute;
+    top: -60px;
+    left: 130px;
+            height:100px;
+            width: 510px;
+            border: 2px black;
+            margin-top: 30px;
+            text-align:left;
+            
+}
+.destinationBtn {
+                border-radius: 0;
+                height:60px;
+                width: 80px;
+                background-color: inherit;
+                padding-bottom:0;
+                color: #ffffff;
+                border:none;
+                margin:20px; 
+    
+    
+    }
     
     .destinationHeading {
         position: absolute;
@@ -695,6 +818,105 @@ color: #FFFFFF;
     .crewBody {
         background-image: url(assets/crew/background-crew-tablet.jpg);
     }
+    .meetCrewContainer {
+        position: absolute;
+width: 404px;
+height: 24px;
+left: 38.5px;
+top: 136px;
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+letter-spacing: 3.375px;
+text-transform: uppercase;
+
+color: #ffffff;
+}
+    .crewPosition {
+        position: absolute;
+height: 28px;
+left: 20.42%;
+right: 32.42%;
+top: calc(50% - 28px/2 - 77px);
+
+font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+        text-align: center;
+/* identical to box height */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+opacity: 0.5;
+    } 
+    .crewName {
+        position: absolute;
+height: 46px;
+left: 10.1%;
+right: 0.11%;
+top: calc(50% - 46px/2 - 32px);
+text-align: center;
+font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 46px;
+/* identical to box height */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+    }
+    .aboutCrew {
+        position: absolute;
+height: 84px;
+left: ;
+right: 0%;
+top: calc(50% - 84px/2 + 49px);
+
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+/* or 175% */
+
+text-align: center;
+
+color: #D0D6F9;
+    }
+    
+    .crewSelector{
+            height:40px;
+            width: 300px;
+            border: 2px black;
+            margin-top: 30px;
+            text-align:center;
+            top: 490px;
+        left: 255px
+}
+    
+    .crewMember {
+        position: absolute;
+width: 456.37px;
+height: 572px;
+left: 155.85px;
+top: 600px;
+
+background
+    }
+    
     
 /*    Technology*/
     
@@ -702,10 +924,26 @@ color: #FFFFFF;
         background-image: url(assets/technology/background-technology-tablet.jpg);
         width: 768px;
     }
+    
+    
+    .technologySelector{
+        position: absolute;
+        top: 520px;
+            height:100px;
+            width: 410px;
+            border: 2px black;
+            margin-top: 30px;
+            text-align:center;
+            
+}
+    
+    
+    
     .techDiv {
         position: relative;
         text-align: center;
     }
+
     
     .technologyH1 {
        position: absolute;
@@ -753,9 +991,9 @@ color: #FFFFFF;
         position: absolute;
 width: 768px;
 height: 310px;
-left: 0px;
+left: 0;
 top: 220px;
-        background-image: url(assets/technology/image-launch-vehicle-landscape.jpg)
+        background-image: url(assets/technology/image-launch-vehicle-landscape.jpg);
             
     }
     .technologyLeft {
@@ -767,5 +1005,14 @@ top: 690px;
     }
     .technologyImage {
         display: none;
+    }
+    
+}
+
+/*    Mobile Size*/
+@media (max-width: 375px) {
+    .navbar-collapsse {
+    width: 50px;
+        
     }
 }
